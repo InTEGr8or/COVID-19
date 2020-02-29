@@ -20,9 +20,9 @@ from sys import platform
 
 repo = "https://github.com/CSSEGISandData/COVID-19"
 
-tsc_csv = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
-tsm_csv = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv"
-tsr_csv = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv"
+tsc_csv = "csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"
+tsm_csv = "csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv"
+tsr_csv = "csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv"
 
 def day_tot(day):
   return f"https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/{day.strftime('%m-%d-%Y')}.csv"

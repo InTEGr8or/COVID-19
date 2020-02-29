@@ -1,4 +1,7 @@
-# Costa Mesa
+---
+title: Costa Mesa
+date: 2020-02-29
+---
 
 ## Fairview Development Center
 

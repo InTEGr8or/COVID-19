@@ -1,0 +1,5 @@
+baseURL = "https://integr8or.github.io/COVID-19/"
+languageCode = "en-us"
+title = "COVID-19"
+publishDir = "docs"
+

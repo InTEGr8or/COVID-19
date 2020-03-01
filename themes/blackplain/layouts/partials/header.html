@@ -4,7 +4,11 @@
 				<h1 class="site-title" id="site-title">
 					<a href='{{ "/" | relURL }}' style="float: left;">
 						<!-- {{ .Site.Params.title }} -->
-						<img class="col-3-md" src='{{ .Site.Params.logo }}' alt="NOFA Kingway Logo"/>
+						{{- if .Site.Params.logo }}
+							<img class="col-3-md" src='{{ .Site.Params.logo }}' alt="{{ .Site.Params.title }}"/>
+						{{- else }}
+							<h1 class="col-3-md">{{ .Site.Params.title }}</h1>
+						{{- end }}
 					</a>
 					<span class="version-span">
 						<!-- {{ partial "github-tag.svg" }} -->

@@ -20,7 +20,6 @@ amazonAssociateTrackingId = "mobilea0dbe49-20"
   taglines = ["A lie is not your aly,", "it is a liability."]
   version = "beta"
   githubURL = "git@github.com:InTEGr8or/hugo_nofakingway.git"
-  logo="/images/nofakingway-250xauto.jpg"
 
 [taxonomies]
   category = "topics"

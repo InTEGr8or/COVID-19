@@ -1,4 +1,4 @@
-baseURL = "https://integr8or.github.io/COVID-19/"
+baseURL = "http://stasis.global"
 languageCode = "en-us"
 title = "COVID-19"
 publishDir = "docs"

@@ -19,7 +19,7 @@ amazonAssociateTrackingId = "mobilea0dbe49-20"
   title = "COVID-19"
   taglines = ["A lie is not your aly,", "it is a liability."]
   version = "beta"
-  githubURL = "git@github.com:InTEGr8or/hugo_nofakingway.git"
+  githubURL = "git@github.com:InTEGr8or/COVID-19.git"
 
 [taxonomies]
   category = "topics"

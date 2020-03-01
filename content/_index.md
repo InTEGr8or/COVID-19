@@ -23,3 +23,11 @@ Organized COVID-19 information and response.
         </a>
     </div>
 </div>
+<div class="row col-md-12>
+    <div class="col-md-4">
+        <a href="https://covid19info.live/" target="_blank">
+            <img src="2020-03-01-13-18-10-350xauto.png" alt="Covid19Info.live">
+        </a>
+    </div>
+
+</div>

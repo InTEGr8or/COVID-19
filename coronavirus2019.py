@@ -96,7 +96,8 @@ def hotten(val):
     result = 'color: %s;' % color
     # print(val, result)
     return result
-
+def terminal(val):
+  return 'color: #F00; background-color: #111; font-weight: bold;'
 
 # %%
 df = pd.read_csv(tsc_csv).drop(columns=['Lat', 'Long'])
@@ -183,7 +184,7 @@ sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(
           ('border', 'none')
         ]
       }]
-).applymap(hotten, subset=percents)
+).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll'])
 file = open("themes/blackplain/layouts/partials/time_table.html", "w")
 file.write(sytled_df.render())
 sytled_df

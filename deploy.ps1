@@ -1,5 +1,5 @@
 # build and deploy the site
-git pull origin upstream master
+git pull upstream master
 hugo
 py .\coronavirus2019.py
 git add .

@@ -2,4 +2,22 @@ baseURL = "https://integr8or.github.io/COVID-19/"
 languageCode = "en-us"
 title = "COVID-19"
 publishDir = "docs"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+topics = ["Contradition", "Universal", "Activity"]
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 10
+enableRobotsTXT = true
+googleAnalytics = "UA-115076488-1"
+amazonAssociateTrackingId = "mobilea0dbe49-20"
+
+[params]
+  title = "NOFA Kingway"
+  taglines = ["A lie is not your aly,", "it is a liability."]
+  version = "beta"
+  githubURL = "git@github.com:InTEGr8or/hugo_nofakingway.git"
+  logo="/images/nofakingway-250xauto.jpg"
 

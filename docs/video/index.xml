@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>COVID-19</title>
+    <title>Prime Video Content on COVID-19</title>
     <link>http://stasis.global/video/</link>
-    <description>Recent content on COVID-19</description>
+    <description>Recent content in Prime Video Content on COVID-19</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://stasis.global/video/index.xml" rel="self" type="application/rss+xml" />
     

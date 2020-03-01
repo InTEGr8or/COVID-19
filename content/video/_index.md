@@ -1,4 +1,7 @@
-# Prime Video Content
+---
+title: Prime Video Content
+date: 2020-02-29
+---
 
 Micropublishers and citizen journalists are hard at work and setting the record straight.
 

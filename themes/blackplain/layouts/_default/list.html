@@ -2,7 +2,7 @@
   <div data-file="list"></div>
   {{- if eq .Kind "taxonomy" }}
     <div class="breadcrumb">
-      <a href="{{ "/" | relURL }}{{ .Data.Plural | urlize }}/">{{ .Data.Plural | humanize }}</a> / {{ .Data.Term | humanize }}
+      <a href="{{ '/' | relURL }}{{ .Data.Plural | urlize }}/">{{ .Data.Plural | humanize }}</a> / {{ .Data.Term | humanize }}
     </div>
   {{- else if eq .Kind "section" }}
     <div class="breadcrumb list">

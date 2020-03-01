@@ -1,0 +1,8 @@
+<span>
+    <a href="/">Home</a>
+    {{ range (split .URL "/") }}
+        {{ if gt (len . ) 0 }}
+            / <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+        {{ end }}
+    {{ end }}
+</span>

@@ -1,0 +1,18 @@
+<div class="main">
+	<section class="row">
+		{{- range .Page.Sections }}
+			<div class="col-md-6">
+				<div class="card-body">
+					<a href="{{ .Permalink | relURL }}" class="article-titles">
+						<img src="{{ .Params.image }}" width="100%"/>
+						<h4 class="section-title">{{ .Title }}</h4>
+					</a>
+					<p class="lead">
+						{{ .Params.description }}
+					</p>
+					<div class="article-summary">{{ .Summary }}</div>
+				</div>
+			</div>
+		{{- end }}
+	</section>
+</div>

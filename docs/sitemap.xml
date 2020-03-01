@@ -13,12 +13,17 @@
   </url>
   
   <url>
-    <loc>https://integr8or.github.io/COVID-19/categories/</loc>
+    <loc>https://integr8or.github.io/COVID-19/series/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://integr8or.github.io/COVID-19/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://integr8or.github.io/COVID-19/topics/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,11 @@
+{{ if .Params.characters }}
+	<h3 class="title">Characters</h3>
+	<dl class="characters row">
+		{{ range .Params.characters}}
+			{{ range $character, $actor := . }}
+				<dt class="col-6">{{ $character }}</dt>
+				<dd class="col-6">{{ $actor }}</dd>
+			{{ end }}
+		{{ end }}
+	</dl>
+{{ end }}

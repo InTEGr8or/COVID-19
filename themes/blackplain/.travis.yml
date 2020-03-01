@@ -1,0 +1,2 @@
+script:
+    - cat README.md

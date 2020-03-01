@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" data-file="baseof">
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" . }}
+
+{{ block "main" . }}
+
+{{ end }}
+{{ partial "footer.html" . }}
+<script type='text/javascript' src='/js/powerpress/player.min.js'></script>
+{{ partial "scripts-footer.html" . }}
+<script type="text/javascript">
+	function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+</script>
+</body>
+</html>

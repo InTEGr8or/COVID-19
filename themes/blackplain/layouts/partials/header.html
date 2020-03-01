@@ -1,0 +1,27 @@
+<header class="site-header">
+	<nav class="site-navi">
+			<div class="col-5 title-col">
+				<h1 class="site-title" id="site-title">
+					<a href='{{ "/" | relURL }}' style="float: left;">
+						<!-- {{ .Site.Params.title }} -->
+						<img class="col-3-md" src='{{ .Site.Params.logo }}' alt="NOFA Kingway Logo"/>
+					</a>
+					<span class="version-span">
+						<!-- {{ partial "github-tag.svg" }} -->
+					</span>
+				</h1>
+			</div>
+			<div class="col-7 site-tag">
+				{{- range .Site.Params.taglines }}
+				<div class="col-12">{{ . }}</div>
+				{{- end }}
+				<div class="col-12">
+					{{ partial "latest-commit.html" . }}
+				</div>
+			</div>
+	</nav>
+	<nav class="nav navbar-nav">
+		{{ partial "breadcrumbs.html"}}
+	</nav>
+</header>
+<hr class="site-header-bottom">

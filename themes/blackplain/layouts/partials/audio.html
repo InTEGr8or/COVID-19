@@ -1,0 +1,3 @@
+{{- if .Params.audio }}
+	<audio src="{{ .Site.Params.bbURL }}{{ .Params.audio }}" preload="auto" controls></audio>
+{{- end }}

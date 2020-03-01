@@ -1,0 +1,9 @@
+{{- if .Params.versus }}
+	<h3 class="title">Versus</h3>
+	<dl class="versus row">
+		{{- range $key, $value := .Params.versus}}
+			<dt class="col-6">{{ $key }}</dt>
+			<dd class="col-6">{{ $value }}</dd>
+		{{- end }}
+	</dl>
+{{- end }}

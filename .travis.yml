@@ -1,0 +1,39 @@
+# language: python
+
+install:
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    # - pip install Pygments
+
+script:
+    - git checkout master
+    # - git submodule update --init --recursive
+    - docs="docs"
+    - rm -rf docs
+    # - if [ -d "$docs"]; then
+    #     echo "stupid docs didn't remove"
+    #   fi
+    - hugo
+    - rm -r hugo_0*.deb
+    - baseURL=$(cat config.toml | grep baseURL | awk '{print $3}' | tr -d \")
+    - echo $baseURL
+    - printf $baseURL > docs/CNAME
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  script: bash travis_deploy.sh
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+
+after_success:
+    # - git add --force docs/
+    # - git -c user.name='travis' -c user.email='travis' commit -m "travis build `date`"
+    # - githubURL=$(cat config.toml | grep githubURL | awk '{print $3}' | tr -d \")
+    # - echo $githubURL
+    # - echo $GITHUB_TOKEN
+    # - pushPath=${githubURL}
+    # - echo $pushPath
+    # - git push $pushPath master

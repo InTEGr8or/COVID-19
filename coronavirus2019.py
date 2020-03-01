@@ -120,6 +120,7 @@ update_firsts(dfm, 'First Death')
 dfm.set_index(['Country', 'State'], inplace=True)
 df.fillna('')
 df['Country'].fillna('')
+df['State'].fillna('')
 dfm.fillna('')
 
 df.set_index(['Country', 'State'], inplace=True)

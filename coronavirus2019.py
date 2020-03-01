@@ -155,13 +155,12 @@ df.drop(columns=dates, inplace=True)
 
 
 # %%
-df.set_index('Country', inplace=True)
-sytled_df = df.style.set_table_styles(
+sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(
     [
       {
         'selector': 'tr:hover',
         'props': [
-          ('background-color', 'black')
+          ('background-color', 'dark-gray')
         ]
       },
       {

@@ -138,7 +138,7 @@ rev_dates = sorted([parser.parse(date) for date in dates], reverse=True)
 for i, date in enumerate(rev_dates):
   date = cdate(date)
   d = parser.parse(date)
-  col = d.strftime('%B')[:3] + d.strftime('%d')
+  col = d.strftime('%B')[:3] + ' ' + d.strftime('%d')
 
   df[col] = df[date].replace(np.inf, 0).fillna(0).astype(int)
   if i < len(dates) - 1:

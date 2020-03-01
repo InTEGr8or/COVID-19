@@ -174,8 +174,7 @@ sytled_df = df.style.set_table_styles(
         'selector': 'thead, tbody',
         'props': [
           ('color', 'white'),
-          ('background-color', 'black'),
-          ('font-family', "'/fonts/FuraMono-Regular Powerline.otf'")
+          ('background-color', 'black')
         ]
       },
       {

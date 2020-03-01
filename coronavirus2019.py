@@ -97,7 +97,9 @@ def hotten(val):
     # print(val, result)
     return result
 def terminal(val):
-  return 'color: #F00; background-color: #111; font-weight: bold;'
+  color = '#F00' if int(val) > 0 else '#333'
+  # print(val, color)
+  return f'color: {color}; background-color: #111; font-weight: bold;'
 
 # %%
 df = pd.read_csv(tsc_csv).drop(columns=['Lat', 'Long'])

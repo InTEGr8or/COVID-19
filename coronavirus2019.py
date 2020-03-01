@@ -184,7 +184,7 @@ sytled_df = df.style.set_table_styles(
         ]
       }]
 ).applymap(hotten, subset=percents)
-file = open("docs/time_table.html", "w")
+file = open("themes/blackplain/layouts/partials/time_table.html", "w")
 file.write(sytled_df.render())
 sytled_df
 

@@ -144,7 +144,7 @@ for i, date in enumerate(rev_dates):
   if i < len(dates) - 1:
     pcol = dates[i + 1]
     pct_idx = df.columns.get_loc(pcol)
-    pct_col = col + '%'
+    pct_col = col + '𝚫'
     percents.append(pct_col)
     pct_val = round((df[date] / df[dates[i + 1]].fillna(0) * 100) - 100).replace(np.inf, 0).fillna(0).astype(int).astype(str) + '%'
     drop_dates.append(date)

@@ -155,7 +155,7 @@ df.drop(columns=dates, inplace=True)
 
 
 # %%
-# df.set_index('Country', inplace=True)
+df.set_index('Country', inplace=True)
 sytled_df = df.style.set_table_styles(
     [
       {

@@ -6,6 +6,8 @@ repo: https://github.com/InTEGr8or/covid-19
 
 Organized COVID-19 information and response.
 
+Here are some helpful graphical summaries.
+
 <div class="row col-md-12">
     <div class="col-md-4">
         <a href="https://www.worldometers.info/coronavirus/" target="_blank">
@@ -25,8 +27,15 @@ Organized COVID-19 information and response.
 </div>
 <div class="row col-md-12">
     <div class="col-md-4">
+        <label>Covid19info.live</label>
         <a href="https://covid19info.live/" target="_blank">
             <img src="2020-03-01-13-18-10-350xauto.png" alt="Covid19Info.live">
+        </a>
+    </div>
+    <div class="col-md-4">
+        <label>Identify and Treat</label>
+        <a href="https://www.wikihow.com/Identify-Coronavirus" target="_blank">
+            <img src="2020-03-01-18-51-12-350xauto.png" alt="Identify and Treat">
         </a>
     </div>
 </div>

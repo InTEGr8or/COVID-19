@@ -62,7 +62,7 @@ def datecols(df):
 
 def update_firsts(df, firsts_col):
   # Get date of first death or days since first death.
-  df[f'{firsts_col}'] = ''
+  df[f'{firsts_col}'] = datetime.now()
   dates = sorted([parser.parse(col) for col in df.columns if is_date(col) ])
   # print(f"{firsts_col} dates:", dates, df.columns)
   for i, row in df.iterrows():
@@ -75,6 +75,7 @@ def update_firsts(df, firsts_col):
           # print(f"update_firsts(df, {firsts_col}):\n", date, row[date])
       except Exception as e:
         # pass
+        breakpoint(cdate(date), row, e)
         print(f"### ERROR update_firsts(df, {firsts_col}):\n", cdate(date), row, e)
   # print(f"update_firsts({firsts_col})\n", df.iloc[:3])
 
@@ -132,64 +133,63 @@ df['First Death'] = dfm[dfm.columns[-1]].fillna('')
 df['Death Aging'] = datetime.now() - df['First Death'].apply(lambda date: parser.parse(date, fuzzy=True) if is_date(date) else '')
 df['Death Aging'] = df['Death Aging'].apply(lambda days: ' '.join(str(days).replace('NaT', '').split(' ')[:2]))
 df.drop(columns=['First Death'], inplace=True)
+# df['Confirmed Aging'] = datetime.now() - df['First Confirmed'].apply(lambda date: parser.parse(date, fuzzy=True))
+# df['Confirmed Aging'] = df['Confirmed Aging'].apply(lambda days: ' '.join(str(days).split(' ')[:2]))
+# df.drop(columns=['First Confirmed'], inplace=True)
 
-df['Confirmed Aging'] = datetime.now() - df['First Confirmed'].apply(lambda date: parser.parse(date, fuzzy=True))
-df['Confirmed Aging'] = df['Confirmed Aging'].apply(lambda days: ' '.join(str(days).split(' ')[:2]))
-df.drop(columns=['First Confirmed'], inplace=True)
+# percents = []
+# drop_dates = []
+# rev_dates = sorted([parser.parse(date) for date in dates], reverse=True)
+# for i, date in enumerate(rev_dates):
+#   date = cdate(date)
+#   d = parser.parse(date)
+#   col = d.strftime('%B')[:3] + ' ' + d.strftime('%d')
 
-percents = []
-drop_dates = []
-rev_dates = sorted([parser.parse(date) for date in dates], reverse=True)
-for i, date in enumerate(rev_dates):
-  date = cdate(date)
-  d = parser.parse(date)
-  col = d.strftime('%B')[:3] + ' ' + d.strftime('%d')
-
-  df[col] = df[date].replace(np.inf, 0).fillna(0).astype(int)
-  if i < len(dates) - 1:
-    pcol = dates[i + 1]
-    pct_idx = df.columns.get_loc(pcol)
-    pct_col = f"{col}&#120491;"
-    percents.append(pct_col)
-    pct_val = round((df[date] / df[dates[i + 1]].fillna(0) * 100) - 100).replace(np.inf, 0).fillna(0).astype(int).astype(str) + '%'
-    drop_dates.append(date)
-    # df.insert(pct_idx, pct_col, pct_val)
-    df[pct_col] = pct_val
-df.drop(columns=dates, inplace=True)
+#   df[col] = df[date].replace(np.inf, 0).fillna(0).astype(int)
+#   if i < len(dates) - 1:
+#     pcol = dates[i + 1]
+#     pct_idx = df.columns.get_loc(pcol)
+#     pct_col = f"{col}&#120491;"
+#     percents.append(pct_col)
+#     pct_val = round((df[date] / df[dates[i + 1]].fillna(0) * 100) - 100).replace(np.inf, 0).fillna(0).astype(int).astype(str) + '%'
+#     drop_dates.append(date)
+#     # df.insert(pct_idx, pct_col, pct_val)
+#     df[pct_col] = pct_val
+# df.drop(columns=dates, inplace=True)
 
 
 # %%
-sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(
-    [
-      {
-        'selector': 'tr:hover',
-        'props': [
-          ('background-color', 'dark-gray')
-        ]
-      },
-      {
-        'selector': 'table',
-        'props': [
-          ('border-spacing', '0px'),
-        ]
-      },
-      {
-        'selector': 'thead, tbody',
-        'props': [
-          ('color', 'white'),
-          ('background-color', 'black')
-        ]
-      },
-      {
-        'selector': 'td',
-        'props': [
-          ('border', 'none')
-        ]
-      }]
-).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll'])
-file = open("themes/blackplain/layouts/partials/time_table.html", "w")
-file.write(sytled_df.render())
-sytled_df
+# sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(
+#     [
+#       {
+#         'selector': 'tr:hover',
+#         'props': [
+#           ('background-color', 'dark-gray')
+#         ]
+#       },
+#       {
+#         'selector': 'table',
+#         'props': [
+#           ('border-spacing', '0px'),
+#         ]
+#       },
+#       {
+#         'selector': 'thead, tbody',
+#         'props': [
+#           ('color', 'white'),
+#           ('background-color', 'black')
+#         ]
+#       },
+#       {
+#         'selector': 'td',
+#         'props': [
+#           ('border', 'none')
+#         ]
+#       }]
+# ).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll'])
+# file = open("themes/blackplain/layouts/partials/time_table.html", "w")
+# file.write(sytled_df.render())
+# sytled_df
 
 
 

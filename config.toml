@@ -1,11 +1,11 @@
 baseURL = "http://stasis.global"
 languageCode = "en-us"
-title = "COVID-19"
+title = "COVID-19 Global Pandemic"
 publishDir = "docs"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 theme = "blackplain"
 
-topics = ["Contradition", "Universal", "Activity"]
+topics = ["coronavirus", "CovId-19", "nCov-2019"]
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"

@@ -92,8 +92,9 @@ def hotten(val):
     the css property `'color: red'` for negative
     strings, black otherwise.
     """
-    heat = str(hex(min(int(val.replace('%', '')) * 10 + 56, 255))).split('x')[-1].upper()
-    color = f'#{heat}5555'
+    heat_int = min(int(val.replace('%', '')) * 10, 255)
+    heat = hex(heat_int)[2:].zfill(2).upper()
+    color = f'#{heat}0000'
     result = 'color: %s;' % color
     # print(val, result)
     return result
@@ -101,6 +102,8 @@ def terminal(val):
   color = '#F00' if int(val) > 0 else '#333'
   # print(val, color)
   return f'color: {color}; background-color: #111; font-weight: bold;'
+def dimnought(val):
+  return 'color: #000;' if int(val) == 0 else 'color: #FFF'
 
 # %%
 df = pd.read_csv(tsc_csv).drop(columns=['Lat', 'Long'])
@@ -139,12 +142,13 @@ df.drop(columns=['First Confirmed'], inplace=True)
 
 percents = []
 drop_dates = []
+new_dates = []
 rev_dates = sorted([parser.parse(date) for date in dates], reverse=True)
 for i, date in enumerate(rev_dates):
   date = cdate(date)
   d = parser.parse(date)
   col = d.strftime('%B')[:3] + ' ' + d.strftime('%d')
-
+  new_dates.append(col)
   df[col] = df[date].replace(np.inf, 0).fillna(0).astype(int)
   if i < len(dates) - 1:
     pcol = dates[i + 1]
@@ -186,7 +190,7 @@ sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(
           ('border', 'none')
         ]
       }]
-).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll'])
+).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll']).applymap(dimnought, subset=new_dates)
 file = open("themes/blackplain/layouts/partials/time_table.html", "w")
 file.write(sytled_df.render())
 sytled_df

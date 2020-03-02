@@ -16,8 +16,8 @@ googleAnalytics = "UA-115076488-1"
 amazonAssociateTrackingId = "mobilea0dbe49-20"
 
 [params]
-  title = "COVID-19"
-  taglines = ["A lie is not your aly,", "it is a liability."]
+  title = "COVID-19 Global Pandemic"
+  taglines = ["Eyes open", "No fear"]
   version = "beta"
   githubURL = "git@github.com:InTEGr8or/COVID-19.git"
 

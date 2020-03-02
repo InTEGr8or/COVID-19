@@ -1,7 +1,7 @@
 <header class="site-header">
 	<nav class="site-navi">
-			<div class="col-5 title-col">
-				<h1 class="site-title" id="site-title">
+			<div class="col-8 title-col">
+				<div class="site-title" id="site-title">
 					<a href='{{ "/" | relURL }}' style="float: left;">
 						<!-- {{ .Site.Params.title }} -->
 						{{- if .Site.Params.logo }}
@@ -13,9 +13,9 @@
 					<span class="version-span">
 						<!-- {{ partial "github-tag.svg" }} -->
 					</span>
-				</h1>
+				</div>
 			</div>
-			<div class="col-7 site-tag">
+			<div class="col-4 site-tag">
 				{{- range .Site.Params.taglines }}
 				<div class="col-12" >{{ . }}</div>
 				{{- end }}

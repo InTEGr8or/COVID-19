@@ -88,11 +88,9 @@ def is_date(text):
 
 def hotten(val):
     """
-    Takes a scalar and returns a string with
-    the css property `'color: red'` for negative
-    strings, black otherwise.
+    Returns black for zero and higher red color for higher percentages up to 100%
     """
-    heat_int = min(int(val.replace('%', '')) * 10, 255)
+    heat_int = min(int(val.replace('%', '')) * 10 + 10, 255)
     heat = hex(heat_int)[2:].zfill(2).upper()
     color = f'#{heat}0000'
     result = 'color: %s;' % color

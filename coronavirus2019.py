@@ -62,7 +62,7 @@ def datecols(df):
 
 def update_firsts(df, firsts_col):
   # Get date of first death or days since first death.
-  df[f'{firsts_col}'] = datetime.now()
+  df[f'{firsts_col}'] = ''
   dates = sorted([parser.parse(col) for col in df.columns if is_date(col) ])
   # print(f"{firsts_col} dates:", dates, df.columns)
   for i, row in df.iterrows():

@@ -162,7 +162,7 @@ df.drop(columns=dates, inplace=True)
 
 # %%
 df.sort_values(by=['Country', 'State'], inplace=True)
-df.drop_duplicates(subset=['Country', 'State'], inplace=True, keep=False)
+# df.drop_duplicates(subset=['Country', 'State'], inplace=True, keep=False)
 sytled_df = df.style.set_table_styles(
   [
     {

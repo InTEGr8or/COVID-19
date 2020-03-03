@@ -122,10 +122,10 @@ mdates = datecols(dfm)
 update_firsts(df, 'First Confirmed')
 update_firsts(dfm, 'First Death')
 
-df['Country'].fillna('')
-# df['State'].fillna('')
 dfm.set_index(['Country', 'State'], inplace=True)
 df.fillna('')
+df['Country'].fillna('')
+df['State'].fillna('')
 dfm.fillna('')
 
 df.set_index(['Country', 'State'], inplace=True)
@@ -158,39 +158,36 @@ for i, date in enumerate(rev_dates):
     # df.insert(pct_idx, pct_col, pct_val)
     df[pct_col] = pct_val
 df.drop(columns=dates, inplace=True)
-# df['State'].replace('nan', '', inplace=True)
+
 
 # %%
-df.sort_values(by=['Country', 'State'], inplace=True)
-# df.drop_duplicates(subset=['Country', 'State'], inplace=True, keep=False)
-sytled_df = df.style.set_table_styles(
-  [
-    {
-      'selector': 'tr:hover',
-      'props': [
-        ('background-color', 'dark-gray')
-      ]
-    },
-    {
-      'selector': 'table',
-      'props': [
-        ('border-spacing', '0px'),
-      ]
-    },
-    {
-      'selector': 'thead, tbody',
-      'props': [
-        ('color', 'white'),
-        ('background-color', 'black')
-      ]
-    },
-    {
-      'selector': 'td',
-      'props': [
-        ('border', 'none')
-      ]
-    }
-  ]
+sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(
+    [
+      {
+        'selector': 'tr:hover',
+        'props': [
+          ('background-color', 'dark-gray')
+        ]
+      },
+      {
+        'selector': 'table',
+        'props': [
+          ('border-spacing', '0px'),
+        ]
+      },
+      {
+        'selector': 'thead, tbody',
+        'props': [
+          ('color', 'white'),
+          ('background-color', 'black')
+        ]
+      },
+      {
+        'selector': 'td',
+        'props': [
+          ('border', 'none')
+        ]
+      }]
 ).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll']).applymap(dimnought, subset=new_dates)
 file = open("themes/blackplain/layouts/partials/time_table.html", "w")
 file.write(sytled_df.render())

@@ -162,7 +162,8 @@ df.drop(columns=dates, inplace=True)
 
 # %%
 df.sort_values(by=['Country', 'State'], inplace=True)
-sytled_df = df.reset_index(drop=True).style.set_table_styles(
+# df.index.drop_duplicates(keep=False)
+sytled_df = df.reset_index(drop=False).style.set_table_styles(
     [
       {
         'selector': 'tr:hover',

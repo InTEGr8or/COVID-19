@@ -122,10 +122,10 @@ mdates = datecols(dfm)
 update_firsts(df, 'First Confirmed')
 update_firsts(dfm, 'First Death')
 
-dfm.set_index(['Country', 'State'], inplace=True)
-df.fillna('')
 df['Country'].fillna('')
 df['State'].fillna('')
+dfm.set_index(['Country', 'State'], inplace=True)
+df.fillna('')
 dfm.fillna('')
 
 df.set_index(['Country', 'State'], inplace=True)
@@ -158,7 +158,7 @@ for i, date in enumerate(rev_dates):
     # df.insert(pct_idx, pct_col, pct_val)
     df[pct_col] = pct_val
 df.drop(columns=dates, inplace=True)
-
+# df['State'].replace('nan', '', inplace=True)
 
 # %%
 sytled_df = df.sort_values(by=['Country', 'State']).style.set_table_styles(

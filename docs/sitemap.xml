@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://stasis.global/full-data/</loc>
+    <lastmod>2020-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://stasis.global/preparation/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -20,6 +25,10 @@
   <url>
     <loc>http://stasis.global/video/</loc>
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stasis.global/video/contagions_in_films/</loc>
   </url>
   
   <url>

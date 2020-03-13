@@ -10,7 +10,7 @@
 					<p class="lead">
 						{{ .Params.description }}
 					</p>
-					<div class="article-summary">{{ .Summary }}</div>
+					<div class="article-summary">{{ .Summary | plainify | safeHTML }}</div>
 				</div>
 			</div>
 		{{- end }}

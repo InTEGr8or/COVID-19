@@ -10,8 +10,9 @@ Here are some helpful graphical summaries.
 
 <div class="row col-md-12">
     <div class="col-md-4">
-        <a href="https://www.worldometers.info/coronavirus/" target="_blank">
-            <img src="2020-02-29-17-47-08-350xauto.png" alt="World-o-Meters">
+        <label>Covid19info.live</label>
+        <a href="https://covid19info.live/" target="_blank">
+            <img src="2020-03-01-13-18-10-350xauto.png" alt="Covid19Info.live">
         </a>
     </div>
     <div class="col-md-4">
@@ -24,12 +25,14 @@ Here are some helpful graphical summaries.
             <img src="2020-02-29-18-09-55-350xauto.png" alt="World-o-Meters">
         </a>
     </div>
-</div>
-<div class="row col-md-12">
     <div class="col-md-4">
-        <label>Covid19info.live</label>
-        <a href="https://covid19info.live/" target="_blank">
-            <img src="2020-03-01-13-18-10-350xauto.png" alt="Covid19Info.live">
+        <a href="https://www.worldometers.info/coronavirus/" target="_blank">
+            <img src="2020-02-29-17-47-08-350xauto.png" alt="World-o-Meters">
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="https://www.flattenthecurve.com/" target="_blank">
+            <img src="2020-03-12-11-27-31-350xauto.png" alt="World-o-Meters">
         </a>
     </div>
     <div class="col-md-4">

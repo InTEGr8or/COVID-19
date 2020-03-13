@@ -138,6 +138,9 @@ df['Confirmed Aging'] = datetime.now() - df['First Confirmed'].apply(lambda date
 df['Confirmed Aging'] = df['Confirmed Aging'].apply(lambda days: ' '.join(str(days).split(' ')[:2]))
 df.drop(columns=['First Confirmed'], inplace=True)
 
+# file = open("layouts/shortcodes/countries.html", "w")
+# file.write(df.style.render())
+
 percents = []
 drop_dates = []
 new_dates = []
@@ -163,7 +166,7 @@ df.drop(columns=dates, inplace=True)
 # %%
 df.sort_values(by=['Country', 'State'], inplace=True)
 # df.index.drop_duplicates(keep=False)
-sytled_df = df.reset_index(drop=False).style.set_table_styles(
+styled_df = df.reset_index(drop=False).style.set_table_styles(
     [
       {
         'selector': 'tr:hover',
@@ -192,8 +195,8 @@ sytled_df = df.reset_index(drop=False).style.set_table_styles(
       }]
 ).applymap(hotten, subset=percents).applymap(terminal, subset=['Death Toll']).applymap(dimnought, subset=new_dates)
 file = open("themes/blackplain/layouts/partials/time_table.html", "w")
-file.write(sytled_df.render())
-sytled_df
+file.write(styled_df.render())
+styled_df
 
 # %%
 

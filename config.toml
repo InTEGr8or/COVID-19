@@ -4,7 +4,7 @@ title = "COVID-19 Global Pandemic"
 publishDir = "docs"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 theme = "blackplain"
-summaryLength = 50
+summaryLength = 10
 
 topics = ["coronavirus", "CovId-19", "2019-nCov"]
 

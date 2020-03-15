@@ -3,7 +3,7 @@ param(
     [boolean] $Force
 )
 $pull_result = git pull upstream master
-echo $pull_result
+Write-Output $pull_result
 if ($pull_result -ne "Already up to date." -or $Force){
     py .\coronavirus2019.py
     hugo

@@ -158,6 +158,15 @@ h6, .h6 {
   margin-bottom: 1.25rem;
   color: #999;
 }
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
 article img {
   max-width: 100%;
   height: auto;

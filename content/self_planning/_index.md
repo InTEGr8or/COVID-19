@@ -1,5 +1,5 @@
 ---
-title: Preperation Items
+title: Self-Planning
 date: 2020-03-01
 description: Preperation Items On My List
 ---
@@ -12,3 +12,5 @@ Here are some preliminary protection items. You might not be ready to don your T
 - Lysol wipes
 - Clorox wipes
 - Hand towels for drying off your items post-wipe.
+
+{{< youtube_video 1t2t8d8xtD0 >}}

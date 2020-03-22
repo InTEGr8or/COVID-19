@@ -8,29 +8,17 @@ Organized COVID-19 information and response.
 
 Here are some helpful graphical summaries.
 
-<div class="row col-md-12">
+<div class="row col-xs-12">
     {{< figure src="2020-03-01-13-18-10-350xauto.png" link="https://covid19info.live/" target="_blank" class="col-xs-4" title="Covid19info.live" >}}
-    {{< figure src="2020-02-29-18-06-35-350xauto.png" link="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank" class="col-xs-4" title="Johns Hopkins" >}}
-    <div class="col-md-4">
-        <a href="http://ncov.bii.virginia.edu/dashboard/" target="_blank">
-            <img src="2020-02-29-18-09-55-350xauto.png" alt="World-o-Meters">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="https://www.worldometers.info/coronavirus/" target="_blank">
-            <img src="2020-02-29-17-47-08-350xauto.png" alt="World-o-Meters">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="https://www.flattenthecurve.com/" target="_blank">
-            <img src="2020-03-12-11-27-31-350xauto.png" alt="World-o-Meters">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <label>Identify and Treat</label>
-        <a href="https://www.wikihow.com/Identify-Coronavirus" target="_blank">
-            <img src="2020-03-01-18-51-12-350xauto.png" alt="Identify and Treat">
-        </a>
-    </div>
+
+    {{< figure src="2020-02-29-18-06-35-300xauto.png" link="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank" class="col-xs-4" title="Johns Hopkins" >}}
+
+    {{< figure src="2020-02-29-18-09-55-350xauto.png" link="http://ncov.bii.virginia.edu/dashboard/" target="_blank" title="COVID-19 Surveillance Dashboard" class="col-xs-4" >}}
+
+    {{< figure src="2020-02-29-17-47-08-300xauto.png" link="https://www.worldometers.info/coronavirus/" target="_blank" title="World-O-Meters" class="col-xs-4" >}}
+
+    {{< figure src="2020-03-12-11-27-31-350xauto.png" link="https://www.flattenthecurve.com/" target="_blank" title="Flatten the Curve" class="col-xs-4" >}}
+
+    {{< figure src="2020-03-01-18-51-12-350xauto.png" link="https://www.wikihow.com/Identify-Coronavirus" target="_blank" title="Identify and Treat" class="col-xs-4" >}}
 </div>
 

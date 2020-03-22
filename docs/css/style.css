@@ -552,6 +552,14 @@ blockquote blockquote blockquote blockquote {
   fill: currentColor;
 }
 
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
 h1 {
   text-align: center;
 }

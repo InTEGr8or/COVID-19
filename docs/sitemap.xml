@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://stasis.global/biology/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://stasis.global/response/ccp_convo/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
   </url>

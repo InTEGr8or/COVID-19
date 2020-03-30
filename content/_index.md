@@ -24,3 +24,7 @@ Here are some helpful graphical summaries.
 </div>
 
 [IHME | COVID-19 Projections](https://covid19.healthdata.org/projections)
+
+[Coronavirus Cases](https://data.nbcstations.com/national/2020/coronavirus/animated-map/)
+
+[Map shows coronavirus cases in Orange County cities](https://www.ocregister.com/2020/03/27/map-shows-coronavirus-cases-in-orange-county-cities/)

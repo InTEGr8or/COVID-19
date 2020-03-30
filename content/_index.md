@@ -20,5 +20,7 @@ Here are some helpful graphical summaries.
     {{< figure src="2020-03-12-11-27-31-350xauto.png" link="https://www.flattenthecurve.com/" target="_blank" title="Flatten the Curve" class="col-xs-4" >}}
 
     {{< figure src="2020-03-01-18-51-12-350xauto.png" link="https://www.wikihow.com/Identify-Coronavirus" target="_blank" title="Identify and Treat" class="col-xs-4" >}}
+
 </div>
 
+[IHME | COVID-19 Projections](https://covid19.healthdata.org/projections)

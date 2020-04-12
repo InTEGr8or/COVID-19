@@ -6,8 +6,8 @@ $pull_result = git pull upstream master
 Write-Output $pull_result
 if ($pull_result -ne "Already up to date." -or $Force){
     py .\coronavirus2019.py
-    pageres 'https://covid19info.live/' 900x900 --selector='#statistics > div.map-container' --filename='content/covidinfo.live' --crop --overwrite
-    pageres 'https://www.worldometers.info/coronavirus/' 900x900 --selector='#main_table_countries_today' --filename='content/worldometers_coronavirus' --crop --overwrite
+    pageres 'https://covid19info.live/' 900x1000 --selector='#statistics > div.map-container' --filename='content/covidinfo.live' --crop --overwrite
+    pageres 'https://www.worldometers.info/coronavirus/' 900x300 --selector='#main_table_countries_today' --filename='content/worldometers_coronavirus' --crop --overwrite
     # pageres 'https://covid19info.live/' 1180x1500 --selector='#statistics > div.map-container' --filename='content/covidinfo.live.png' --crop --overwrite
     hugo
     Set-Content -Path 'docs/CNAME' -Value 'stasis.global'

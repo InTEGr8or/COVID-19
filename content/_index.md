@@ -15,7 +15,7 @@ Here are some helpful graphical summaries.
 
     {{< figure src="2020-02-29-18-09-55-350xauto.png" link="http://ncov.bii.virginia.edu/dashboard/" target="_blank" title="COVID-19 Surveillance Dashboard" class="col-xs-4" >}}
 
-    {{< figure src="2020-02-29-17-47-08-300xauto.png" link="https://www.worldometers.info/coronavirus/" target="_blank" title="World-O-Meters" class="col-xs-4" >}}
+    {{< figure src="worldometers_coronavirus.png.png" link="https://www.worldometers.info/coronavirus/" target="_blank" title="World-O-Meters" class="col-xs-4" >}}
 
     {{< figure src="2020-03-12-11-27-31-350xauto.png" link="https://www.flattenthecurve.com/" target="_blank" title="Flatten the Curve" class="col-xs-4" >}}
 
@@ -28,3 +28,10 @@ Here are some helpful graphical summaries.
 [Coronavirus Cases](https://data.nbcstations.com/national/2020/coronavirus/animated-map/)
 
 [Map shows coronavirus cases in Orange County cities](https://www.ocregister.com/2020/03/27/map-shows-coronavirus-cases-in-orange-county-cities/)
+
+[datadesk/california-coronavirus-data](https://github.com/datadesk/california-coronavirus-data)
+
+[Getting Title at 31:18](https://hub-binder.mybinder.ovh/user/datadesk-califo-oronavirus-data-59lu2x17/lab)
+
+
+[California coronavirus cases: Tracking the outbreak](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/#la-county)

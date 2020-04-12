@@ -9,13 +9,13 @@ Organized COVID-19 information and response.
 Here are some helpful graphical summaries.
 
 <div class="row col-xs-12">
-    {{< figure src="2020-03-01-13-18-10-350xauto.png" link="https://covid19info.live/" target="_blank" class="col-xs-4" title="Covid19info.live" >}}
+    {{< figure src="covidinfo.live.png" link="https://covid19info.live/" target="_blank" class="col-xs-4" title="Covid19info.live" >}}
 
     {{< figure src="2020-02-29-18-06-35-300xauto.png" link="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank" class="col-xs-4" title="Johns Hopkins" >}}
 
     {{< figure src="2020-02-29-18-09-55-350xauto.png" link="http://ncov.bii.virginia.edu/dashboard/" target="_blank" title="COVID-19 Surveillance Dashboard" class="col-xs-4" >}}
 
-    {{< figure src="worldometers_coronavirus.png.png" link="https://www.worldometers.info/coronavirus/" target="_blank" title="World-O-Meters" class="col-xs-4" >}}
+    {{< figure src="worldometers_coronavirus.png" link="https://www.worldometers.info/coronavirus/" target="_blank" title="World-O-Meters" class="col-xs-4" >}}
 
     {{< figure src="2020-03-12-11-27-31-350xauto.png" link="https://www.flattenthecurve.com/" target="_blank" title="Flatten the Curve" class="col-xs-4" >}}
 

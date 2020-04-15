@@ -35,3 +35,5 @@ Here are some helpful graphical summaries.
 
 
 [California coronavirus cases: Tracking the outbreak](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/#la-county)
+
+[COVID-19 Case Counts and Testing Figures | Novel Coronavirus (COVID-19)](https://occovid19.ochealthinfo.com/coronavirus-in-oc)

@@ -31,7 +31,7 @@ Here are some helpful graphical summaries.
 
 [datadesk/california-coronavirus-data](https://github.com/datadesk/california-coronavirus-data)
 
-[Getting Title at 31:18](https://hub-binder.mybinder.ovh/user/datadesk-califo-oronavirus-data-59lu2x17/lab)
+[Binder Jupyter Notebook of Datadesk data](https://hub-binder.mybinder.ovh/user/datadesk-califo-oronavirus-data-59lu2x17/lab)
 
 
 [California coronavirus cases: Tracking the outbreak](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/#la-county)

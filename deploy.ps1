@@ -16,6 +16,3 @@ if ($pull_result -ne "Already up to date." -or $Force){
     Set-Content -Path 'docs/CNAME' -Value 'stasis.global'
     git add .; git commit -m 'updates'; git push
 }
-
-
-

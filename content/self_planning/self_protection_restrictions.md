@@ -4,6 +4,8 @@ description: Just as the gov't central planning is collapsing and being exposed 
 date: 2020-04-15
 ---
 
+[Source Webpage](https://www.firearmspolicy.org/act?utm_campaign=onb_ta_intro_don_04_15_20&utm_medium=email&utm_source=firearmspolicycoalition)
+
 ### <span style="text-decoration: underline;">**Federal**</span>
 
 **Bill/Issue: Oppose HR 5717/S. 3254 - Federal Gunpocalypse**
